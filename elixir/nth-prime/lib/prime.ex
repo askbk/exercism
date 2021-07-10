@@ -11,14 +11,14 @@ defmodule Prime do
   end
 
   defp find_next_prime(n) do
-    if is_composite(n) do
+    if composite?(n) do
       find_next_prime(n + 1)
     else
       n
     end
   end
 
-  defp is_composite(n) do
+  defp composite?(n) do
     2..(n - 1)
     |> Enum.any?(&(Integer.mod(n, &1) == 0))
   end
