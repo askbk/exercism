@@ -1,0 +1,4 @@
+{
+    "elixirLS.projectDir": "elixir",
+    "elixir.credo.configurationFile":  "elixir/.credo.exs"
+}
